@@ -1,6 +1,11 @@
-import pytest
+import sys
+import os
 import pandas as pd
-from fetch_data import fetch_coin_universe
+
+# Ensure the project root is in sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from fetch_data import fetch_coin_universe  # Now import should work
 
 def test_fetch_coin_universe():
     """Ensures that the fetch_coin_universe function generates a valid CSV file."""

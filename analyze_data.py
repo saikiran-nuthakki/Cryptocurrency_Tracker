@@ -25,6 +25,7 @@ def analyze_vs_bitcoin(pricing_file):
     df["diff_vs_btc"] = abs(df["percent_change_24h"] - btc_change)
     df = df[df["symbol"] != "BTC"].sort_values("diff_vs_btc")
 
+    df = df.drop(columns=["price","percent_change_24h","cmc_rank", "IsTopCurrency"])
     analysis_file = os.path.join(DATA_DIR, f"btc_relationship_{os.path.basename(pricing_file)}")
     df.to_csv(analysis_file, index=False)
     print(f"Saved analysis: {analysis_file}")  

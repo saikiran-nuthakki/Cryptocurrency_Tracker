@@ -53,12 +53,7 @@ All results are stored in the `crypto_data/` directory:
 - **`btc_relationship_YYYYMMDD_HHMMSS.csv`** → Difference in 24H percent change between bitcoin and the coin being evaluated, sorted in ascending order.
 - **`avg_24h_change_vs_btc.csv`** → Aggregated 24H change trends.
 
-## Development & Contribution
-### Code Formatting & Linting
-```sh
-python -m pipenv run black .
-python -m pipenv run flake8 .
-```
+
 
 ### Running Tests
 ```sh
