@@ -61,7 +61,7 @@ python -m pipenv run pytest tests/
 ```
 
 ## Roadmap / Future Improvements
-- **Database Integration**: Store results in PostgreSQL or MongoDB.
+- **Database Integration**: Store results in DB of choice.
 - **Web Dashboard**: Visualize trends using Streamlit or Flask.
 - **Automated Alerts**: Send email/SMS alerts for significant price changes.
 - **Historical Backtesting**: Analyze past performance for better insights.

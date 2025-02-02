@@ -1,6 +1,6 @@
 from fetch_data import fetch_coin_universe, fetch_coin_prices
 from analyze_data import analyze_vs_bitcoin
-from compute_metrics import compute_avg_change
+from compute_historical_difference import compute_avg_change
 import time
 import sys
 
