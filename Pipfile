@@ -8,6 +8,9 @@ requests = "*"
 pandas = "*"
 
 [dev-packages]
+pytest = "*"
+flake8 = "*"
+black = "*"
 
 [requires]
 python_version = "3.11"
