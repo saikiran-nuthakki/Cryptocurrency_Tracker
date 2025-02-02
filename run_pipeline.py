@@ -6,10 +6,10 @@ import sys
 
 # Define the steps in the pipeline
 steps = [
-    ("Step #1: Fetching the universe of coins...", fetch_coin_universe),
-    ("Step #2: Fetching price data for tracked coins...", fetch_coin_prices),
-    ("Step #3: Analyzing the relationship with Bitcoin...", analyze_vs_bitcoin),
-    ("Step #4: Computing historical averages...", compute_avg_change)
+    ("Step #1: Fetching the universe of coins (Coins + Metadata)", fetch_coin_universe),
+    ("Step #2: Fetching price data for tracked coins (Specified Coin Data)", fetch_coin_prices),
+    ("Step #3: Analyzing the relationship with Bitcoin (Coin Price vs Bitcoin Price)", analyze_vs_bitcoin),
+    ("Step #4: Computing historical averages", compute_avg_change)
 ]
 
 for step_description, step_function in steps:

@@ -48,8 +48,9 @@ python -m pipenv run python run_pipeline.py
 
 ## Output & Data
 All results are stored in the `crypto_data/` directory:
-- **`crypto_prices_YYYYMMDD_HHMMSS.csv`** → Raw price data per run.
-- **`btc_relationship_YYYYMMDD_HHMMSS.csv`** → Sorted price movement comparison vs Bitcoin.
+- **`coin_universe.csv`** → Data for all available coins and their metadata.
+- **`crypto_prices_YYYYMMDD_HHMMSS.csv`** → Pricing data for coins from coins_to_track.csv with load datetime, and currency ranking.
+- **`btc_relationship_YYYYMMDD_HHMMSS.csv`** → Difference in 24H percent change between bitcoin and the coin being evaluated, sorted in ascending order.
 - **`avg_24h_change_vs_btc.csv`** → Aggregated 24H change trends.
 
 ## Development & Contribution
