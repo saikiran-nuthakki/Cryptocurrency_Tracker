@@ -1,7 +1,7 @@
 import os
 
 # CoinMarketCap API Key (Use an environment variable for security)
-API_KEY = os.getenv("CMC_API_KEY", "b438220a-b349-4742-81d3-d6d8b2339057")
+API_KEY = os.getenv("CMC_API_KEY", "your_coinmarketcap_api_key")
 
 # CoinMarketCap API Base URL
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/"

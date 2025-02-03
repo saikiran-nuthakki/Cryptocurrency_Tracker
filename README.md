@@ -24,9 +24,9 @@ python -m pipenv install --dev
 ```
 
 ### 3. Add Your API Key
-CoinMarketCap requires an API key. Update `config.py`:
+CoinMarketCap requires an API key. Update `config.py` and replace "your_coinmarketcap_api_key" with API key:
 ```python
-API_KEY = "your_coinmarketcap_api_key"
+API_KEY = os.getenv("CMC_API_KEY", "your_coinmarketcap_api_key")
 ```
 
 ### 4. Configure Tracked Coins
